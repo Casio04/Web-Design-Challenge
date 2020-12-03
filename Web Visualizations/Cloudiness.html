@@ -8,30 +8,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color:#dfdfdfd0"> 
-    <nav class="navbar navbar-dark py-4 justify-content-end" style="background-color: #3b3b3b;">
-        <a class="navbar-brand mr-auto ml-5 px-3" href="index.html"><h5>Home</h5></a>
-        <div class="dropdown">
-            <button class="btn dropdown-toggle ml-auto mr-3" style="background-color:#3b3b3b; color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="text"><h5 style="color: white">Plots</h5></span>
-                <span class="caret"></span>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="Maxtemp.html">Max Temperature</a>
-              <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
-              <a class="dropdown-item" href="Humidity.html">Humidity</a>
-            </div>
-          </div>
-        <a class="navbar-brand pr-3" href="comparison.html"><h5>Comparison</h5></a>
-        <a class="navbar-brand mr-5" href="data.html"><h5>Data</h5></a>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark py-4 justify-content-end" style="background-color: #3b3b3b;">
+        <ul class="navbar-nav mr-auto">
+            <a class="navbar-brand" href="index.html"><h5 class="inactive">Home</h5></a>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="text"><h5 class="active">Plots</h5></span>
+                  <span class="caret"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="Maxtemp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html"><h5 class="inactive">Comparison</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html"><h5 class="inactive">Data</h5></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 <br><br>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-12 text-center">
                     <div class="box">
                         <h2>Latitude vs Cloudiness</h2><br>
-                        <img src="Resources/Cloudiness.png" alt="Cloudiness"><br><br>
+                        <img src="Resources/Cloudiness.png" alt="Cloudiness" class="smaller-image"><br><br>
                         <p>Here, we can see the cloudiness percentage, with at least two interesting inferences we can make only taking a look <br><br> 
                             First, we can see that the concentration of clouds is charged to the maximums and minimmums across all the latitudes, which could
                             mean two things: <br><br> 1. Since these are expected to be cities, that is, urban places, many times nature is not that close to them,

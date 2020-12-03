@@ -1,9 +1,46 @@
 /* // Medium devices (tablets, 768px and up) */
+@media (max-width: 500px){
+    .smaller-image{
+        width: 90%;
+    }
+    h1,.h1{
+        font-size:24px;
+    }
+        /* Saving header size change in case it is needed for small screens */
+    /* 
+    h2,.h2{
+        font-size:22px;
+    }
+    h3,.h3{
+        font-size:20px;
+    }
+    h4,.h4{
+        font-size:18px;
+    }
+    h5,.h5{
+        font-size:16px;
+    } */
+}
+
 /* This "zoom" property is only applied for big screens, since on small ones it doesn't properly work */
 @media (min-width: 768px) { 
     .image:hover{
         transform: scale(1.2);
     }
+ }
+.active{
+    color: rgb(255, 255, 255);
+}
+
+.inactive{
+    color:#BFCAD0
+}
+
+.inactive:hover{
+    color: #738580;
+}
+ h5{
+     color: white;
  }
 
 li {
