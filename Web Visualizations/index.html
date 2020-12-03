@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design - Made by Carlos Casio</title>
+    <!--Linking CSS local file and bootstrap from the Web  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:#dfdfdfd0"> 
+    <!-- Inserting navigation bar, adding links, formatting and displaying dropdown button -->
+    <nav class="navbar navbar-dark py-4 justify-content-end" style="background-color: #3b3b3b;">
+        <a class="navbar-brand mr-auto ml-5 px-3" href="index.html"><h5>Home</h5></a>
+        <div class="dropdown">
+            <!-- The ml-auto class allows the navbar to insert all the buttons to the right side of the screen  -->
+            <button class="btn dropdown-toggle ml-auto mr-3" style="background-color:#3b3b3b; color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="text"><h5 style="color: white">Plots</h5></span>
+                <span class="caret"></span>
+            </button>
+        <!-- Here is the list to the dropdown menu -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="Maxtemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
+              <a class="dropdown-item" href="Humidity.html">Humidity</a>
+            </div>
+          </div>
+        <a class="navbar-brand pr-3" href="comparison.html"><h5>Comparison</h5></a>
+        <a class="navbar-brand mr-5" href="data.html"><h5>Data</h5></a>
+    </nav>
+    <!-- This is the parent container which holds all the data and images -->
+    <div class="container">
+        <div class="row">
+            <!-- Using 8 units from the grid system for the "main" part of the page -->
+            <div class="col-md-8 col-sm-12">
+                <!-- Enclosing both parts in different boxes so they can be manipulable on different screens -->
+                <div class="box"><br>
+                    <h1>Introduction: Latitude vs "X"</h1>
+                    <hr>
+                    <img src="Resources/Wind Speed.png" alt="Wind_Speed" class="float-left mr-2 col-md-8 col-sm-12" width= 40%>
+                    <p>On this project, I used the OpenWeatherMap API to randomly select 500 cities 
+                        and obtain 4 types of data from them: </p>
+                    <ul>
+                        <li>Cloudiness</li>
+                        <li>Humidity</li>
+                        <li>Maximum Temperature</li>
+                        <li>Wind Speed</li>
+                    </ul>
+                    <p> With that information, we wanted to see any kind of relationship of those factors and comparing them to the 
+                    latitude, in this case specifically, how would it behave if closer to the Ecuador (being 0,0 the most centered point). I made use of Python
+                    and Jupyter Notebook to help me through the visualizations and coding of every analysis made.</p>
+                </div>
+            </div>
+            
+            <!-- Using the resting 4 units of the grid to show the comparisons visual -->
+            <div class="col-md-4 col-sm-12">
+                <div class="box"><br>
+                    <h1>Comparisons</h1>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <a href="Cloudiness.html">  
+                                        <img src="Resources/Cloudiness.png" alt="Cloudiness" width=100% class="image m-1">
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <a href="Cloudiness.html">    
+                                    <img src="Resources/Wind Speed.png" alt="Wind_Speed" width=100% class="image m-1">
+                                </a>
+                            </div>
+                        </div> 
+                    </div><br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <a href="Cloudiness.html">    
+                                    <img src="Resources/Max temp.png" alt="Maxtemp" width=100% class="image m-1">
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <a href="Cloudiness.html">    
+                                    <img src="Resources/Humidity.png" alt="Humidity" width=100% class="image m-1">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+    </div>    
+
+<!-- Importing JQuery, popper.js and Bootstrap JS -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<!-- Always remember to call the above files first before calling the bootstrap.min.js file -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

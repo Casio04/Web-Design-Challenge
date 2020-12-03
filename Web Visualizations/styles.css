@@ -1,0 +1,62 @@
+/* // Medium devices (tablets, 768px and up) */
+/* This "zoom" property is only applied for big screens, since on small ones it doesn't properly work */
+@media (min-width: 768px) { 
+    .image:hover{
+        transform: scale(1.2);
+    }
+ }
+
+li {
+    list-style-position: inside;
+    }
+
+p{
+    text-align: justify
+}
+
+.bordertitles{
+    border-right: solid;
+    border-color: #0d7272;
+}
+
+span{
+    display: inline-block;
+}
+button{
+    font-size: 20px;
+}
+
+h1, h2, h3{
+    color: #0f0736;
+    text-align: center;
+}
+
+hr{
+    border-top: 2px dashed #120b6b
+}
+
+table{
+    border-collapse: collapse;
+    border-right: #dfdfdfd0;
+    border-left: #dfdfdfd0;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+thead{
+    color: #0d7272;
+}
+
+.image:hover{
+    border: solid 3px #120b6b;
+}
+
+table{
+    border: solid 1px gray;
+}
+
+td{
+    text-align: center;
+}
